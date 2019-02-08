@@ -2,6 +2,12 @@
 
 .vectorlines1{
     justify-content: center;
-    height:125em;
-    width:125em;
+    height:275em;
+    width:275em;
+}
+
+.vectorlines2{
+    justify-content: center;
+    height:150em;
+    width:150em;
 }
