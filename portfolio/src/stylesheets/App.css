@@ -2,12 +2,21 @@
 
 .vectorlines1{
     justify-content: center;
-    height:275em;
-    width:275em;
+    height:100em;
+    width:100em;
 }
 
 .vectorlines2{
     justify-content: center;
-    height:150em;
-    width:150em;
+    height:100em;
+    width:100em;
 }
+
+.vectorlines3{
+    justify-content: center;
+    height:100em;
+    width:100em;
+}
+
+
+.MuiGridListTile-tile-6:hover{border:4px solid pink;}
