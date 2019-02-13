@@ -72,6 +72,9 @@
   color: #fff;
 }
 
-.fa-arrow-right:before, .fa-arrow-left:before {
-  color: #222
+
+
+.text{
+    color:red;
+    font-size:50em;
 }
