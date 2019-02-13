@@ -58,7 +58,7 @@ export default class Slider extends Component {
 
            ))
          }
-         
+
 
 
 
@@ -66,7 +66,7 @@ export default class Slider extends Component {
 
         <RightArrow goToNextSlide={this.goToNextSlide}
         />
-        Hello!!!!
+        He
       </div>
     );
   }
