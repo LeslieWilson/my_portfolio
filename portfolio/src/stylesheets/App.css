@@ -1,21 +1,31 @@
+/*.firstTwofades{
+    border: 10px solid black;
+    height: 10em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(../scenes/home/images/vectorlines1.svg);
 
+}*/
 
 .vectorlines1{
-    justify-content: center;
-    height:100em;
-    width:100em;
+    position: absolute;
+    height:50em;
+    width:50em;
+
 }
 
 .vectorlines2{
-    justify-content: center;
-    height:100em;
-    width:100em;
+    position: absolute;
+    height:50em;
+    width:50em;
+    
 }
 
 .vectorlines3{
-    justify-content: center;
-    height:100em;
-    width:100em;
+    position:left;
+    height:50em;
+    width:200em;
 }
 
 
@@ -23,7 +33,7 @@
 
 
 .slider {
-  position: relative;
+  position: left;
   width: 500px;
   margin: 0 auto;
   height: 500px;
@@ -73,8 +83,12 @@
 }
 
 
-
 .text{
     color:red;
-    font-size:50em;
+    font-size:10em;
+    text-align:center;
+}
+
+.hidden{
+    visibility:hidden;
 }
