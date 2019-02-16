@@ -15,14 +15,11 @@ class Homecontainer extends Component {
       <div className="homecontainer">
 
       <div className='same'>
- <Blacknwhite />
-
-
+        <Blacknwhite />
         < Fadein />
         </div>
-<Slider />
-
-<Gridlist />
+        <Slider />
+        <Gridlist />
 
 
 
