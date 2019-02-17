@@ -1,7 +1,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 import vectorlines2 from '../../images/vectorlines2.svg';
-v
+
 class Fadein extends React.Component {
   constructor(props) {
     super(props);
