@@ -20,18 +20,6 @@ class Homecontainer extends Component {
         </div>
         <Slider />
         <Gridlist />
-
-
-
-
-
-
-
-
-
-
-
-
       </div>
     );
   }
