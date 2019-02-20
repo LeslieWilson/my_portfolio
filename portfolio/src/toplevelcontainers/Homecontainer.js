@@ -3,7 +3,7 @@ import Blacknwhite from '../scenes/home/components/Blacknwhite.js'
 
 import White from '../scenes/home/components/White.js'
 
-import Slider from '../../projects/components/myslider/Slider.js'
+import Slider from '../scenes/projects/components/myslider/Slider.js'
 import Fadein from '../scenes/home/components/fade/Fadein.js'
 
 

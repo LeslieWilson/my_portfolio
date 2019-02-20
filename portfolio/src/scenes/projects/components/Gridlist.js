@@ -27,11 +27,11 @@ const styles = theme => ({
   },
 });
 
-
 function ImageGridList(props) {
   const { classes } = props;
 
   return (
+
     <div className={classes.root}>
       <GridList cellHeight={450} className={classes.gridList} cols={3}>
         {tileData.map(tile => (
@@ -41,6 +41,7 @@ function ImageGridList(props) {
         ))}
       </GridList>
     </div>
+
   );
 }
 

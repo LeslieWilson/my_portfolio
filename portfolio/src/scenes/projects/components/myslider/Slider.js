@@ -8,7 +8,6 @@ import Text  from './Text.js'
 export default class Slider extends Component {
   constructor(props) {
     super(props)
-
     this.state = {
       slides: [
         {image: "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/aurora.jpg",
@@ -22,10 +21,7 @@ export default class Slider extends Component {
       currentIndex: 0,
       translateValue: 0
     }
-
   }
-
-
   goToNextSlide = () => {
 
       if(this.state.currentIndex === this.state.slides.length - 1) {
@@ -46,7 +42,6 @@ export default class Slider extends Component {
   }
 
   render(
-
   ) {
       let style="hidden";
       let textTiles = this.state.text.map((text,i) => {

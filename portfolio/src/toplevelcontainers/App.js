@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Router, browserHistory, Route, IndexRoute} from 'react-router';
+import {BrowserRouter as Router, Route } from 'react-router-dom';
 import '../stylesheets/App.css';
 import Homecontainer from './Homecontainer';
 import NavBar from '../scenes/navbar/components/NavBar';
@@ -11,14 +11,16 @@ import Gridlist from '../scenes/projects/components/Gridlist';
 class App extends Component {
   render() {
     return (
+<Router>
+<div>
 
-      <Router history={browserHistory}>
-      <Route path='/' component={NavBar} >
-      <IndexRoute component={Homecontainer}/>
-      <Route path = "/about" component={Aboutpage} />
-      <Route path = '/contact' component={Contactpage}/>
-      <Route path ='/projects' component={Gridlist}/>
-      </Route>
+      <Route path='/' component={NavBar} />
+      <Route exact path = '/' component ={Homecontainer}/>
+      <Route exact path = "/about" component={Aboutpage} />
+      <Route exact path = '/contact' component={Contactpage}/>
+      <Route exact path ='/projects' component={Gridlist}/>
+
+</div>
       </Router>
 
     );

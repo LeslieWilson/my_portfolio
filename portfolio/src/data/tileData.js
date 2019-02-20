@@ -1,10 +1,10 @@
 import React from 'react';
-import imageOne from '../images/gridlist/imageOne.jpg';
-import imageTwo from '../images/gridlist/imageTwo.jpg';
-import imageThree from '../images/gridlist/imageThree.png';
-import imageFour from '../images/gridlist/imageFour.jpg';
-import imageFive from '../images/gridlist/imageFive.jpg';
-import imageSix from '../images/gridlist/imageSix.jpg';
+import imageOne from '../scenes/projects/images/gridlist/imageOne.jpg';
+import imageTwo from '../scenes/projects/images/gridlist/imageTwo.jpg';
+import imageThree from '../scenes/projects/images/gridlist/imageThree.png';
+import imageFour from '../scenes/projects/images/gridlist/imageFour.jpg';
+import imageFive from '../scenes/projects/images/gridlist/imageFive.jpg';
+import imageSix from '../scenes/projects/images/gridlist/imageSix.jpg';
 
 
 const tileData=[
