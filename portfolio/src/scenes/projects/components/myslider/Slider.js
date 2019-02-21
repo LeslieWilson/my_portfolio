@@ -9,15 +9,8 @@ export default class Slider extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      slides: [
-        {image: "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/aurora.jpg",
-        text: "some stuff"},
-        {image:"https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/canyon.jpg",
-        text:"aksjdhfkah"},
-        {image: "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/city.jpg",
-        text:"happy"}
-      ],
-      text:["hello 1","hello 2","hello 3"],
+      slides: this.props.images,
+      text: this.props.text,
       currentIndex: 0,
       translateValue: 0
     }

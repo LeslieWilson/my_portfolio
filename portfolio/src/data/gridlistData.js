@@ -7,12 +7,13 @@ import imageFive from '../scenes/projects/images/gridlist/imageFive.jpg';
 import imageSix from '../scenes/projects/images/gridlist/imageSix.jpg';
 
 
-const tileData=[
+const gridlistData=[
     {
         img:imageOne,
         title: 'first',
         author: 'blah',
         cols: 1,
+        link:'/project1',
 
     },
 
@@ -21,6 +22,7 @@ const tileData=[
         title: 'second',
         author:'bloo',
         cols: 1,
+        link: '/project2',
     },
 
     {
@@ -28,6 +30,8 @@ const tileData=[
         title: 'third',
         author: 'bee',
         cols: 1,
+        link: '/project3',
+
     },
 
     {
@@ -35,6 +39,7 @@ const tileData=[
         title: 'fourth',
         author: 'borg',
         cols: 1,
+        link:'/project4',
     },
 
     {
@@ -42,6 +47,7 @@ const tileData=[
         title: 'fifth',
         author: 'haa',
         cols: 1,
+        link: '/project5',
     },
 
     {
@@ -49,7 +55,8 @@ const tileData=[
         title: 'sixth',
         author: 'hoo',
         cols: 1,
+        link: '/project6'
     },
 ];
 
-export default tileData;
+export default gridlistData;

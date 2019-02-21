@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
-import tileData from '../../../data/tileData';
+import gridlistData from '../../../data/gridlistData';
+import { Link } from 'react-router-dom';
 
 
 
@@ -34,9 +35,9 @@ function ImageGridList(props) {
 
     <div className={classes.root}>
       <GridList cellHeight={450} className={classes.gridList} cols={3}>
-        {tileData.map(tile => (
+        {gridlistData.map(tile => (
           <GridListTile key={tile.img} cols={tile.cols || 3}>
-            <img src={tile.img} alt={tile.title} />
+            <Link to={tile.link}><img src={tile.img} alt={tile.title} /></Link>
           </GridListTile>
         ))}
       </GridList>

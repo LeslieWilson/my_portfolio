@@ -6,6 +6,7 @@ import NavBar from '../scenes/navbar/components/NavBar';
 import Aboutpage from '../scenes/navbar/components/Aboutpage';
 import Contactpage from '../scenes/navbar/components/Contactpage';
 import Gridlist from '../scenes/projects/components/Gridlist';
+import Slider from '../scenes/projects/components/myslider/Slider';
 
 
 class App extends Component {
@@ -19,6 +20,19 @@ class App extends Component {
       <Route exact path = "/about" component={Aboutpage} />
       <Route exact path = '/contact' component={Contactpage}/>
       <Route exact path ='/projects' component={Gridlist}/>
+      <Route exact path ='/project1' render={ () =><Slider
+      images={[
+        {image: "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/aurora.jpg"},
+        {image:"https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/canyon.jpg"},
+        {image: "https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/city.jpg"}
+    ]}
+     text={
+         ["hello 1","hello 2","hello 3"]
+     }
+      />}/>
+
+
+
 
 </div>
       </Router>
