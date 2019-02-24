@@ -8,18 +8,18 @@
 
 }*/
 
+/*Homescreens================================*/
+
 .blacknwhite{
     position: absolute;
     height:50em;
     width:50em;
-
 }
 
 .vectorlines2{
     position: absolute;
     height:50em;
     width:50em;
-
 }
 
 .vectorlines3{
@@ -28,9 +28,12 @@
     width:200em;
 }
 
+/*gridlist=====================================*/
+
 
 .MuiGridListTile-tile-6:hover{border:4px solid pink;}
 
+/*slider=======================================*/
 
 .slider {
   position: left;

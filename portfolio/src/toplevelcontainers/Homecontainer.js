@@ -13,15 +13,12 @@ class Homecontainer extends Component {
   render() {
     return (
       <div className="homecontainer">
-
-      <div className='same'>
-        <Blacknwhite />
-        < Fadein />
+        <div className='same'>
+            </div>
+            <Slider />
         </div>
-        <Slider />
+        );
+      }
+    }
 
-      </div>
-    );
-  }
-}
 export default Homecontainer;

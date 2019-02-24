@@ -1,5 +1,4 @@
 
-
 import React, { Component } from 'react'
 import Slide from './Slide.js'
 import RightArrow from './Arrows.js'
@@ -16,7 +15,6 @@ export default class Slider extends Component {
     }
   }
   goToNextSlide = () => {
-
       if(this.state.currentIndex === this.state.slides.length - 1) {
             return this.setState({
               currentIndex: 0,
@@ -27,15 +25,13 @@ export default class Slider extends Component {
       currentIndex: prevState.currentIndex + 1,
       translateValue: prevState.translateValue + -(this.slideWidth())
     }));
-
   }
 
   slideWidth = () => {
      return document.querySelector('.slide').clientWidth
   }
 
-  render(
-  ) {
+  render() {
       let style="hidden";
       let textTiles = this.state.text.map((text,i) => {
           if(this.state.currentIndex !==i){
@@ -43,32 +39,23 @@ export default class Slider extends Component {
               else {
               style = "visible"
           }
-          return (<Text key={i} text={text} visibility={style}/>)
+      return (<Text key={i} text={text} visibility={style}/>)
       })
-
      return (
          <div>
-       <div className="slider">
-       <div className="slider-wrapper"
-          style={{
-            transform: `translateX(${this.state.translateValue}px)`,
-            transition: 'transform ease-out 2s'
-          }}>
+            <div className="slider">
+                <div className="slider-wrapper"
+                  style={{
+                    transform: `translateX(${this.state.translateValue}px)`,
+                    transition: 'transform ease-out 2s'}}>
+                  {this.state.slides.map((slide, i) => (<Slide key={i} image={slide.image}/>))}
+        </div>
 
-         {
-           this.state.slides.map((slide, i) => (
-             <Slide key={i} image={slide.image} />
 
-           ))
-         }
-
-         </div>
-
-        <RightArrow goToNextSlide={this.goToNextSlide}
-        />
+        <RightArrow goToNextSlide={this.goToNextSlide}/>
         </div>
         {textTiles}
-      </div>
-    );
-  }
-}
+        </div>
+        );
+      }
+    }
