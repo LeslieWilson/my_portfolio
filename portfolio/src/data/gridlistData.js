@@ -1,10 +1,11 @@
 import React from 'react';
-import imageOne from '../scenes/projects/images/gridlist/imageOne.jpg';
-import imageTwo from '../scenes/projects/images/gridlist/imageTwo.jpg';
+import imageOne from '../scenes/projects/images/gridlist/imageOne.png';
+import imageTwo from '../scenes/projects/images/gridlist/imageTwo.png';
 import imageThree from '../scenes/projects/images/gridlist/imageThree.png';
-import imageFour from '../scenes/projects/images/gridlist/imageFour.jpg';
-import imageFive from '../scenes/projects/images/gridlist/imageFive.jpg';
-import imageSix from '../scenes/projects/images/gridlist/imageSix.jpg';
+import imageFour from '../scenes/projects/images/gridlist/imageFour.png';
+import imageFive from '../scenes/projects/images/gridlist/imageFive.png';
+import imageSix from '../scenes/projects/images/gridlist/imageSix.png';
+
 
 
 const gridlistData=[
@@ -58,5 +59,8 @@ const gridlistData=[
         link: '/project6'
     },
 ];
+
+
+
 
 export default gridlistData;

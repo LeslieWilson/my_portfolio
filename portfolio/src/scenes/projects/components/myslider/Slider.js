@@ -4,6 +4,7 @@ import Slide from './Slide.js'
 import RightArrow from './Arrows.js'
 import Text  from './Text.js'
 
+
 export default class Slider extends Component {
   constructor(props) {
     super(props)
@@ -45,6 +46,7 @@ export default class Slider extends Component {
          <div>
             <div className="slider">
                 <div className="slider-wrapper"
+
                   style={{
                     transform: `translateX(${this.state.translateValue}px)`,
                     transition: 'transform ease-out 2s'}}>
