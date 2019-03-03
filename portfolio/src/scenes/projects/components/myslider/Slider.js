@@ -1,8 +1,10 @@
 
 import React, { Component } from 'react'
 import Slide from './Slide.js'
-import RightArrow from './Arrows.js'
-import Text  from './Text.js'
+import RightArrow from './RightArrow.js'
+import LeftArrow from './LeftArrow.js'
+import CircusDescription  from './CircusDescription.js'
+
 
 
 export default class Slider extends Component {
@@ -10,11 +12,28 @@ export default class Slider extends Component {
     super(props)
     this.state = {
       slides: this.props.images,
-      text: this.props.text,
       currentIndex: 0,
       translateValue: 0
     }
   }
+
+
+
+goToPrevSlide = () =>  {
+    if(this.state.currentIndex === this.state.slides.length - 1) {
+          return this.setState({
+            currentIndex: 0,
+            translateValue: 0
+          })
+        }
+    this.setState(prevState => ({
+    currentIndex: prevState.currentIndex + 1,
+    translateValue: prevState.translateValue + -(this.slideWidth())
+  }));
+
+}
+
+
   goToNextSlide = () => {
       if(this.state.currentIndex === this.state.slides.length - 1) {
             return this.setState({
@@ -33,15 +52,6 @@ export default class Slider extends Component {
   }
 
   render() {
-      let style="hidden";
-      let textTiles = this.state.text.map((text,i) => {
-          if(this.state.currentIndex !==i){
-              style="hidden"}
-              else {
-              style = "visible"
-          }
-      return (<Text key={i} text={text} visibility={style}/>)
-      })
      return (
          <div>
             <div className="slider">
@@ -54,9 +64,11 @@ export default class Slider extends Component {
         </div>
 
 
+
         <RightArrow goToNextSlide={this.goToNextSlide}/>
+        <LeftArrow goToPrevSlide={this.goToPrevSlide} />
         </div>
-        {textTiles}
+<CircusDescription />
         </div>
         );
       }

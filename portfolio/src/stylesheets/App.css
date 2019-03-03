@@ -45,13 +45,24 @@
 
 .slider {
   position: left;
-  width: 500px;
+  width: 82em;
   margin: 0 auto;
-  height: 500px;
+  height: 43em;
   overflow: hidden;
   white-space: nowrap;
 }
 
+.text{
+    color:black;
+    font-size:1em;
+    text-align:left;
+    padding-left:4em;
+    position:absolute;
+}
+
+.svg-inline--fa{
+font-size: 6em;
+}
 
 .slider-wrapper {
   position: relative;
@@ -65,40 +76,41 @@
   width: 100%;
 }
 
-.arrow {
-  height: 50px;
-  width: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #f9f9f9;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: transform ease-in .1s;
+.arrows{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9f9f9;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform ease-in .1s;
+}
+
+.prevArrow {
+    position: absolute;
+    top: 45%;
+    left: 25px;
+    z-index: 999;
+    color: #fff;
+    padding-left:4em;
+
+
 }
 
 .nextArrow {
   position: absolute;
-  top: 50%;
+  top: 45%;
   right: 25px;
   z-index: 999;
   color: #fff;
-}
-
-.backArrow {
-  position: absolute;
-  top: 50%;
-  left: 25px;
-  z-index: 999;
-  color: #fff;
+  padding-right:4em;
 }
 
 
-.text{
-    color:red;
-    font-size:2em;
-    text-align:center;
-}
+
+
 
 .hidden{
     visibility:hidden;

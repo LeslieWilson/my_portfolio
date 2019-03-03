@@ -784,7 +784,7 @@
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
 
-"@fortawesome/fontawesome-common-types@^0.2.15":
+"@fortawesome/fontawesome-common-types@^0.2.8-2":
   version "0.2.15"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.15.tgz#16af950653083d1e3064061de9f8e5e3b579f688"
 
@@ -792,21 +792,21 @@
   version "5.7.2"
   resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.7.2.tgz#1498c3eb78ee7c78c5488418707de90aaf58d5d7"
 
-"@fortawesome/fontawesome-svg-core@^1.2.15":
-  version "1.2.15"
-  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-1.2.15.tgz#368f9fc7e8e8d8636495dc7483f97510f920ba97"
+"@fortawesome/fontawesome-svg-core@^1.2.8-2":
+  version "1.2.8-2"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-1.2.8-2.tgz#173d3867056656467fd32b77604c47a99d979b1b"
   dependencies:
-    "@fortawesome/fontawesome-common-types" "^0.2.15"
+    "@fortawesome/fontawesome-common-types" "^0.2.8-2"
 
-"@fortawesome/free-solid-svg-icons@^5.7.2":
-  version "5.7.2"
-  resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-5.7.2.tgz#9ec2ed353d630092a8e19cc8aae2f716572963e5"
+"@fortawesome/free-solid-svg-icons@^5.5.0-2":
+  version "5.5.0-2"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-5.5.0-2.tgz#8b36595ad9b210c806696bc6c2742fa84bd5f9a0"
   dependencies:
-    "@fortawesome/fontawesome-common-types" "^0.2.15"
+    "@fortawesome/fontawesome-common-types" "^0.2.8-2"
 
-"@fortawesome/react-fontawesome@^0.1.4":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@fortawesome/react-fontawesome/-/react-fontawesome-0.1.4.tgz#18d61d9b583ca289a61aa7dccc05bd164d6bc9ad"
+"@fortawesome/react-fontawesome@^0.1.4-1":
+  version "0.1.4-1"
+  resolved "https://registry.yarnpkg.com/@fortawesome/react-fontawesome/-/react-fontawesome-0.1.4-1.tgz#ca3b33cded3255827e31dedc7ad3656f8429edf5"
   dependencies:
     humps "^2.0.1"
     prop-types "^15.5.10"
