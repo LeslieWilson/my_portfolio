@@ -64,7 +64,7 @@ goToPrevSlide = () =>  {
         </div>
 
 
-
+        
         <RightArrow goToNextSlide={this.goToNextSlide}/>
         <LeftArrow goToPrevSlide={this.goToPrevSlide} />
         </div>

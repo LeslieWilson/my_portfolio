@@ -7,12 +7,14 @@ const  NavBar = props => {
     return(
         <div>
 
+        <Link to ='/'className='drpdownlinkL'>LARISA OVALLES PAULINO</Link>
+
         <div className="navbar">
 
         <Projectpage />
         <Link to = '/about' className='drpdownlink'>ABOUT</Link>
         <Link to = '/contact' className='drpdownlink'>CONTACT</Link>
-        <Link to ='/'className='drpdownlink'>HOME</Link>
+
         </div>
         <div className="content">
         <h1 className="page-title"></h1>

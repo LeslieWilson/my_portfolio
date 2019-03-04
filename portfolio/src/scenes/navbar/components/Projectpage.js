@@ -37,7 +37,7 @@ class Projectpage extends Component {
     return (
       <div className="dropdown">
         <button onClick={this.showMenu}>
-          Projects
+          PROJECTS
         </button>
 
         {
@@ -50,8 +50,8 @@ class Projectpage extends Component {
                 }}
               >
                 <button className='drpdownbtn'> Circus </button>
-                <button className='drpdownbtn'> other project </button>
-                <button className='drpdownbtn'> last project </button>
+                <button className='drpdownbtn'> UX design </button>
+                <button className='drpdownbtn'> Amazon </button>
               </div>
             )
             : (

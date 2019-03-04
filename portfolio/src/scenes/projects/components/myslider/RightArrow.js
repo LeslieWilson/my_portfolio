@@ -9,7 +9,7 @@ const RightArrow = (props) => {
 
 
     <div className="nextArrow">
-    <FontAwesomeIcon  icon= {faAngleRight}  color='gray' onClick={props.goToNextSlide} />
+    <FontAwesomeIcon  icon= {faAngleRight}  color='gray'className='arrows' onClick={props.goToNextSlide} />
 
     </div>
 

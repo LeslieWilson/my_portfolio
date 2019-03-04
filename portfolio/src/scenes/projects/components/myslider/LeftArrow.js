@@ -5,8 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const LeftArrow = (props) => {
   return (
+
       <div className="prevArrow">
-      <FontAwesomeIcon icon= {faAngleLeft} size='l' color='red' onClick={props.goToPrevSlide} />
+
+      <FontAwesomeIcon icon= {faAngleLeft} className='arrows' onClick={props.goToPrevSlide} />
 
       </div>
   );
