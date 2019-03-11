@@ -5,7 +5,7 @@ import Homecontainer from './Homecontainer';
 import NavBar from '../scenes/navbar/components/NavBar';
 import Aboutpage from '../scenes/navbar/components/Aboutpage';
 import Contactpage from '../scenes/navbar/components/Contactpage';
-import Gridlist from '../scenes/projects/components/Gridlist';
+import Gridlist from '../scenes/projects/components/mygridlist/Gridlist';
 import Slider from '../scenes/projects/components/myslider/Slider';
 import images from  '../data/projectData';
 
@@ -59,7 +59,7 @@ class App extends Component {
                 <Route exact path='/project6'
                 render={() =><Slider
                     images={images}
-                    
+
                 />}/>
 
             </div>
