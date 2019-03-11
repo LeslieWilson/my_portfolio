@@ -1,5 +1,5 @@
 
-
+import { Link } from 'react-router-dom';
 import React, { Component } from 'react';
 
 class Projectpage extends Component {
@@ -16,29 +16,23 @@ class Projectpage extends Component {
 
   showMenu(event) {
     event.preventDefault();
-
-    this.setState({ showMenu: true }, () => {
-      document.addEventListener('click', this.closeMenu);
-    });
+    this.setState({ showMenu: true });
   }
 
   closeMenu(event) {
-
-    if (!this.dropdownMenu.contains(event.target)) {
-
-      this.setState({ showMenu: false }, () => {
-        document.removeEventListener('click', this.closeMenu);
-      });
-
-    }
+      event.preventDefault();
+      this.setState({ showMenu: false });
   }
 
   render() {
     return (
-      <div className="dropdown">
-        <button onClick={this.showMenu}>
-          PROJECTS
-        </button>
+      <div className="dropdown"
+      onMouseEnter={this.showMenu}
+      onMouseLeave={this.closeMenu}>
+        <Link to = '/projects' className='drpdownbtn'>PROJECTS</Link>
+
+
+
 
         {
           this.state.showMenu
@@ -49,9 +43,9 @@ class Projectpage extends Component {
                   this.dropdownMenu = element;
                 }}
               >
-                <button className='drpdownbtn'> Circus </button>
-                <button className='drpdownbtn'> UX design </button>
-                <button className='drpdownbtn'> Amazon </button>
+                <Link to = '/project1' className='drpdownbtn'> CIRCUS </Link>
+                <Link to= '/project1' className='drpdownbtn'> UX DESIGN </Link>
+                <Link  to='/project1' className='drpdownbtn'> AMAZON </Link>
               </div>
             )
             : (

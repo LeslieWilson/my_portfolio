@@ -17,6 +17,7 @@ class Homecontainer extends Component {
             </div>
             <Blacknwhite />
             <Fadein />
+            
 
         </div>
         );

@@ -14,6 +14,11 @@
 .navbar{
     display:flex;
     justify-content: flex-end;
+    background-color:#f6f8f8;
+    z-index:-1000;
+    margin-bottom:-1.32em;
+
+
 }
 
 
@@ -25,7 +30,7 @@
     margins:20px 20px 20px 20px;
     padding:20px 20px 20px 20px;
     text-decoration:none;
-    color:pink;
+    color:gray;
     font-weight:bolder;
 }
 
@@ -34,8 +39,9 @@
     margins:20px 20px 20px 20px;
     padding:20px 20px 20px 20px;
     text-decoration:none;
-    color:pink;
+    color:#ff5c7d;
     font-weight:bolder;
+    background-color: #f6f8f8;
 
 }
 
@@ -53,21 +59,29 @@
 }
 
 
+.drpdownbtn{
 
-button{
-    border-style: outset;
     padding: 6px 12px;
-  margin-bottom: 0;
   font-size: 16px;
   font-weight: normal;
-  line-height: 1.42857143;
-  border: 1px solid transparent;
-  color:pink;
+  line-height: 2;
+  border: 0;
+  color:gray;
   font-weight:bolder;
+  padding:3px;
+  background-color:#f6f8f8;
+  text-decoration:none;
+  text-align:center;
+
 
 }
 
-button:hover{
+button:focus{
+    border:none;
+    outline:none !important
+}
+
+.drpdownbtn:hover{
     color:black;
 }
 .menu{
@@ -152,7 +166,7 @@ font-size: 6em;
 }
 
 .arrows{
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -190,7 +204,45 @@ font-size: 6em;
 
   height:45em;
 }
+/*about================================*/
 
+.textdiv{
+    display:flex;
+    height:50em;
+    width:30em;
+    background-color:white;
+    justify-content: center;
+    width:33em;
+    margin-left:7em;
+    }
+
+    .larisa{
+    display:flex;
+    justify-content:center;
+    width:36em;
+    height: 25em;
+    margin-left: 6em;
+    margin-top: 12em;
+    opacity:1;
+
+
+    }
+
+    .about{
+        display:flex;
+        background-image:url('../scenes/navbar/images/texturesky.png');
+        background-size:contain;
+    }
+    .abouttext{
+        display:flex;
+        justify-content: center;
+        word-break: break-all;
+        white-space: normal;
+        margin-top:11em;
+        color:gray;
+        padding:4em;
+        font-size:.8em;
+    }
 
 /*Mystery CSS================================*/
 
