@@ -1,35 +1,34 @@
 
 import react from 'react';
-import image1  from '../scenes/projects/components/mygridlist/images/gridlist2/image1.jpg';
-import image2  from '../scenes/projects/components/mygridlist/images/gridlist2/image2.jpg';
-import image3  from '../scenes/projects/components/mygridlist/images/gridlist2/image3.png';
+import Project_4_India from '../scenes/projects/components/mygridlist/images/gridlist/Project_4_India.jpg';
+import Project_5_Suburbia from '../scenes/projects/components/mygridlist/images/gridlist/Project_5_Suburbia.jpg';
+import Project_6_Kerez_Exhibition from '../scenes/projects/components/mygridlist/images/gridlist/Project_6_Kerez_Exhibition.jpg';
+
 
 
 const gridlist2Data=[
     {
-        img:image1,
-        title: 'first',
-        author: 'blah',
+        img:Project_4_India,
+        title: 'fourth',
+        author: 'borg',
         cols: 1,
-        link:'/project1',
-
+        link:'/project4',
     },
 
     {
-        img:image2,
-        title: 'second',
-        author:'bloo',
+        img:Project_5_Suburbia,
+        title: 'fifth',
+        author: 'haa',
         cols: 1,
-        link: '/project2',
+        link: '/project5',
     },
 
     {
-        img:image3,
-        title: 'third',
-        author: 'bee',
+        img:Project_6_Kerez_Exhibition,
+        title: 'sixth',
+        author: 'hoo',
         cols: 1,
-        link: '/project3',
-
+        link: '/project6'
     },
 
 ];

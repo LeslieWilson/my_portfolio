@@ -116,20 +116,30 @@ button:focus{
 
 .MuiGridListTile-tile-6:hover{border:4px solid pink;}
 
+
 .MuiGridListTile-root-6 {
     box-sizing: border-box;
     display:flex;
     justify-content: space-around;
-    
+}
 
+
+
+.MuiGridListTile-tile-7:hover{border:4px solid pink;}
+.MuiGridListTile-tile-7 {
+    height: 75% !important;
+    width: 90%;
 
 
 }
-.MuiGridListTile-tile-7:hover{border:4px solid pink;}
-.MuiGridListTile-tile-7 {
-    height: 75%! important;
-    width: 90%;
 
+.gridimgs{
+    height:22em;
+    width:27em;
+}
+
+.omg{
+    margin: 20px -60px 0px 30px;
 }
 
 /*slider=======================================*/
@@ -243,10 +253,7 @@ font-size: 6em;
 
     }
 
-.gridimgs{
-    height:22em;
-    width:27em;
-}
+
     .about{
         display:flex;
         background-image:url('../scenes/navbar/images/texturesky.png');

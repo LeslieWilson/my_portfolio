@@ -20,11 +20,14 @@ const styles = theme => ({
     overflow: 'hidden',
     backgroundColor: theme.palette.background.paper,
     backgroundImage: `url(${texturesky})`,
-
   },
+
+
+
   gridList: {
     width: 5000,
-    height: 1000,
+    height: 555,
+
   },
 
   subheader: {
@@ -33,8 +36,11 @@ const styles = theme => ({
 
   gridListKid:{
     width: 5000,
-    height: 600,
+    height: 555,
+    marginTop: '-200px !important',
 }
+
+
 
 
 });
@@ -45,29 +51,29 @@ function ImageGridList(props) {
   return (
 
     <div className={classes.root}>
-      <GridList cellHeight={450} className={classes.gridList} cols={3}>
+      <GridList cellHeight={450} className={classes.gridList} cols={3} >
         {gridlistData.map(tile => (
-          <GridListTile key={tile.img} cols={tile.cols || 3}>
+          <GridListTile className='omg' key={tile.img} cols={tile.cols || 3}>
             <Link to={tile.link}><img src={tile.img} alt={tile.title} className="gridimgs" /></Link>
           </GridListTile>
         ))}
       </GridList>
 
-      <h1>Research</h1>
+
 
       <GridList cellHeight={450} className={classes.gridListKid} cols={3}>
         {gridlist2Data.map(tile => (
-          <GridListTile key={tile.img} cols={tile.cols || 3}>
-            <Link to={tile.link}><img src={tile.img} alt={tile.title} /></Link>
+          <GridListTile className='omg' key={tile.img} cols={tile.cols || 3}>
+            <Link to={tile.link}><img src={tile.img} alt={tile.title} className="gridimgs"/></Link>
           </GridListTile>
         ))}
       </GridList>
 
       <h1>Architecture</h1>
 
-      <GridList cellHeight={450} className={classes.gridListKid} cols={3}>
+      <GridList cellHeight={250} className={classes.gridListKid} cols={3}>
         {gridlist3Data.map(tile => (
-          <GridListTile key={tile.img} cols={tile.cols || 3}>
+          <GridListTile className='omg' key={tile.img} cols={tile.cols || 3}>
             <Link to={tile.link}><img src={tile.img} alt={tile.title} /></Link>
           </GridListTile>
         ))}
