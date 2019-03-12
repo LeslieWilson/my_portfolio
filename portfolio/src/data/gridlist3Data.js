@@ -1,7 +1,7 @@
 import react from 'react';
-import image1  from '../scenes/projects/images/gridlist3/image1.jpg';
-import image2  from '../scenes/projects/images/gridlist3/image2.jpg';
-import image3  from '../scenes/projects/images/gridlist3/image3.png';
+import image1  from '../scenes/projects/components/mygridlist/images/gridlist3/image1.jpg';
+import image2  from '../scenes/projects/components/mygridlist/images/gridlist3/image2.jpg';
+import image3  from '../scenes/projects/components/mygridlist/images/gridlist3/image3.png';
 
 
 const gridlist3Data=[

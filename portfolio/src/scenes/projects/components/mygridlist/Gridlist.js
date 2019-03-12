@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
-import gridlistData from '../../../data/gridlistData';
-import gridlist2Data from '../../../data/gridlist2Data';
-import gridlist3Data from '../../../data/gridlist3Data';
-import gridlist4Data from '../../../data/gridlist5Data';
+import gridlistData from '../../../../data/gridlistData';
+import gridlist2Data from '../../../../data/gridlist2Data';
+import gridlist3Data from '../../../../data/gridlist3Data';
+import gridlist4Data from '../../../../data/gridlist5Data';
 import { Link } from 'react-router-dom';
-import texturesky from '../images/gridlistbackground/texturesky.png';
+import texturesky from './images/gridlistbackground/texturesky.png';
 
 
 const styles = theme => ({
@@ -48,7 +48,7 @@ function ImageGridList(props) {
       <GridList cellHeight={450} className={classes.gridList} cols={3}>
         {gridlistData.map(tile => (
           <GridListTile key={tile.img} cols={tile.cols || 3}>
-            <Link to={tile.link}><img src={tile.img} alt={tile.title} /></Link>
+            <Link to={tile.link}><img src={tile.img} alt={tile.title} className="gridimgs" /></Link>
           </GridListTile>
         ))}
       </GridList>

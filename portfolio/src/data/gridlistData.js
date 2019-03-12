@@ -1,10 +1,10 @@
 import React from 'react';
-import Project_1_Amazon from '../scenes/projects/images/gridlist/Project_1_Amazon.jpg';
-import Project_2_Circus from '../scenes/projects/images/gridlist/Project_2_Circus.jpg';
-import Project_3_Newark from '../scenes/projects/images/gridlist/Project_3_Newark.jpg';
-import Project_4_India from '../scenes/projects/images/gridlist/Project_4_India.jpg';
-import Project_5_Suburbia from '../scenes/projects/images/gridlist/Project_5_Suburbia.jpg';
-import Project_6_Kerez_Exhibition from '../scenes/projects/images/gridlist/Project_6_Kerez_Exhibition.jpg';
+import Project_1_Amazon from '../scenes/projects/components/mygridlist/images/gridlist/Project_1_Amazon.jpg';
+import Project_2_Circus from '../scenes/projects/components/mygridlist/images/gridlist/Project_2_Circus.jpg';
+import Project_3_Newark from '../scenes/projects/components/mygridlist/images/gridlist/Project_3_Newark.jpg';
+import Project_4_India from '../scenes/projects/components/mygridlist/images/gridlist/Project_4_India.jpg';
+import Project_5_Suburbia from '../scenes/projects/components/mygridlist/images/gridlist/Project_5_Suburbia.jpg';
+import Project_6_Kerez_Exhibition from '../scenes/projects/components/mygridlist/images/gridlist/Project_6_Kerez_Exhibition.jpg';
 
 
 
