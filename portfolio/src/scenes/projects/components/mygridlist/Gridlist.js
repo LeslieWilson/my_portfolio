@@ -12,6 +12,7 @@ import { Link } from 'react-router-dom';
 import texturesky from './images/gridlistbackground/texturesky.png';
 
 
+
 const styles = theme => ({
   root: {
     display: 'flex',
@@ -19,7 +20,10 @@ const styles = theme => ({
     justifyContent: 'space-around',
     overflow: 'hidden',
     backgroundColor: theme.palette.background.paper,
-    backgroundImage: `url(${texturesky})`,
+    backgroundImage:`url(${texturesky})`,
+backgroundSize:'75%',
+
+
   },
 
 
@@ -27,6 +31,7 @@ const styles = theme => ({
   gridList: {
     width: 5000,
     height: 555,
+
 
   },
 
@@ -37,7 +42,13 @@ const styles = theme => ({
   gridListKid:{
     width: 5000,
     height: 555,
-    marginTop: '-200px !important',
+    marginTop: '-189px !important',
+},
+
+gridListKid2:{
+  width: 5000,
+  height: 555,
+  marginTop: '-110px !important',
 }
 
 
@@ -50,7 +61,10 @@ function ImageGridList(props) {
 
   return (
 
+
     <div className={classes.root}>
+
+
       <GridList cellHeight={450} className={classes.gridList} cols={3} >
         {gridlistData.map(tile => (
           <GridListTile className='omg' key={tile.img} cols={tile.cols || 3}>
@@ -59,8 +73,6 @@ function ImageGridList(props) {
         ))}
       </GridList>
 
-
-
       <GridList cellHeight={450} className={classes.gridListKid} cols={3}>
         {gridlist2Data.map(tile => (
           <GridListTile className='omg' key={tile.img} cols={tile.cols || 3}>
@@ -68,26 +80,27 @@ function ImageGridList(props) {
           </GridListTile>
         ))}
       </GridList>
+<h1 className="gridTitle">Urban Design</h1>
 
-      <h1>Architecture</h1>
 
-      <GridList cellHeight={250} className={classes.gridListKid} cols={3}>
+      <GridList cellHeight={450} className={classes.gridListKid2} cols={3}>
         {gridlist3Data.map(tile => (
           <GridListTile className='omg' key={tile.img} cols={tile.cols || 3}>
-            <Link to={tile.link}><img src={tile.img} alt={tile.title} /></Link>
+            <Link to={tile.link}><img src={tile.img} alt={tile.title} className="gridimgs"/></Link>
           </GridListTile>
         ))}
       </GridList>
 
-     <h1>UX Design</h1>
+      <h1 className="gridTitle">Architecture</h1>
 
-      <GridList cellHeight={450} className={classes.gridListKid} cols={3}>
+      <GridList cellHeight={450} className={classes.gridListKid2} cols={3}>
         {gridlist4Data.map(tile => (
-          <GridListTile key={tile.img} cols={tile.cols || 3}>
-            <Link to={tile.link}><img src={tile.img} alt={tile.title} /></Link>
+          <GridListTile className='omg'key={tile.img} cols={tile.cols || 3}>
+            <Link to={tile.link}><img src={tile.img} alt={tile.title} className="gridimgs"/></Link>
           </GridListTile>
         ))}
       </GridList>
+      <h1 className="gridTitle">UX Design</h1>
     </div>
 
   );

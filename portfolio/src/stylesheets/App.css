@@ -11,16 +11,18 @@
 
 /*Navbar=====================================*/
 
+.dots{
+    background-image:url('../scenes/navbar/images/texturesky.png');
+    background-size:75%;
+}
 .navbar{
     display:flex;
     justify-content: flex-end;
-    background-color:#f6f8f8;
+    background-color:rgba(246,248,248,.9);
     z-index:-1000;
     margin-bottom:-1.32em;
 
-
 }
-
 
 .drpdownlink:hover{
     color:black;
@@ -41,7 +43,9 @@
     text-decoration:none;
     color:#ff5c7d;
     font-weight:bolder;
-    background-color: #f6f8f8;
+    background-color: rgba(246,248,248,.9);
+
+
 
 }
 
@@ -56,8 +60,8 @@
     right: 15em;
     top:.7em;
     z-index: 1000;
-}
 
+}
 
 .drpdownbtn{
 
@@ -69,7 +73,7 @@
   color:gray;
   font-weight:bolder;
   padding:3px;
-  background-color:#f6f8f8;
+  background-color:rgba(246,248,248,.9);
   text-decoration:none;
   text-align:center;
 
@@ -113,29 +117,29 @@ button:focus{
 
 /*gridlist=====================================*/
 
+.gridTitle{
+    font-size: 1em;
+    color:hotpink;
+    font-weight:bolder;
+    margin-right:80em;
+    margin-top: -160px;
+},
 
-.MuiGridListTile-tile-6:hover{border:4px solid pink;}
-
-
-.MuiGridListTile-root-6 {
-    box-sizing: border-box;
-    display:flex;
-    justify-content: space-around;
+.gridTitle2 {
+    font-size: 1em;
+    color:hotpink;
+    font-weight:bolder;
+    margin-right:80em;
+    margin-top: -160px;
 }
 
-
-
-.MuiGridListTile-tile-7:hover{border:4px solid pink;}
-.MuiGridListTile-tile-7 {
-    height: 75% !important;
-    width: 90%;
-
-
-}
+.gridimgs:hover{border:4px solid pink;}
 
 .gridimgs{
     height:22em;
     width:27em;
+    border: 1px solid gray;
+    box-shadow:2px 2px lightgray;
 }
 
 .omg{
@@ -217,7 +221,6 @@ font-size: 6em;
     height:45em;
 
 }
-
 
 .nextArrow {
   position: absolute;

@@ -5,7 +5,7 @@ import  Projectpage from './Projectpage.js';
 
 const  NavBar = props => {
     return(
-        <div>
+        <div className="dots">
 
         <Link to ='/'className='drpdownlinkL'>LARISA OVALLES PAULINO</Link>
 

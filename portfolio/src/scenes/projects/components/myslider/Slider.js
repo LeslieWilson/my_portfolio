@@ -55,6 +55,7 @@ goToPrevSlide = () =>  {
      return (
          <div>
             <div className="slider">
+
                 <div className="slider-wrapper"
 
                   style={{
@@ -64,7 +65,7 @@ goToPrevSlide = () =>  {
         </div>
 
 
-        
+
         <RightArrow goToNextSlide={this.goToNextSlide}/>
         <LeftArrow goToPrevSlide={this.goToPrevSlide} />
         </div>
