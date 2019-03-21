@@ -232,6 +232,46 @@ font-size: 6em;
 
   height:45em;
 }
+
+/*slider-info==========================*/
+
+.info_container{
+    display:flex;
+}
+
+.amazonTitle{
+    font-size: 1.25em;
+    color:#ff5c7d;
+    margin-left:8em;
+}
+
+.slider_info{
+    width:80em;
+}
+
+.sidebar_info{
+    font-size:.7em;
+    margin-right:4em;
+    padding:0;
+}
+
+.info_container{
+    margin-left:10em;
+}
+
+.sidey{
+    margin:2px 0px 0px 0px;
+}
+
+.subsidey{
+margin:0;
+}
+
+.deforest{
+    width:70em;
+    margin-left:10em;
+}
+
 /*about================================*/
 
 .textdiv{
@@ -255,7 +295,6 @@ font-size: 6em;
 
 
     }
-
 
     .about{
         display:flex;
