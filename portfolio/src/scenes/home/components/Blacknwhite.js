@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import blacknwhiteVector from '../images/blacknwhiteVector.svg';
+import blkwht2 from '../images/blkwht2.png';
 import ReactSVG from "react-svg";
 
 class Blacknwhite extends Component {
   render() {
     return (
       <div className="blacknwhite">
-        <ReactSVG src= {blacknwhiteVector} svgClassName='vectorlines1' />;
+        <img src= {blkwht2} className="black_n_white_Vectorlines_img"/>;
       </div>
     );
   }

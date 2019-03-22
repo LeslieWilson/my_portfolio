@@ -12,56 +12,73 @@ export default class Slider extends Component {
     super(props)
     this.state = {
       slides: this.props.images,
-      currentIndex: 0,
-      translateValue: 0
+      backgroundIndex: 0,
+      translateValue: 0,
+      slideIndex:0
+
     }
   }
 
-
-
 goToPrevSlide = () =>  {
-    if(this.state.currentIndex === this.state.slides.length - 1) {
-          return this.setState({
-            currentIndex: 0,
-            translateValue: 0
-          })
+    if(this.state.backgroundIndex === 0) {
+          return
         }
     this.setState(prevState => ({
-    currentIndex: prevState.currentIndex + 1,
-    translateValue: prevState.translateValue + -(this.slideWidth())
-  }));
+    translateValue: 1500,
+    slideIndex:prevState.slideIndex-1
+  }))
+
+
+setTimeout(function(){
+    this.setState(prevState =>  ({
+        backgroundIndex: prevState.backgroundIndex-1
+    }));
+}.bind(this), 400);
+
+}
+
+  goToNextSlide = () => {
+      if(this.state.backgroundIndex === this.state.slides.length - 1){
+            return
+        }
+            this.setState(prevState => ({
+              translateValue: -1500,
+              slideIndex: prevState.slideIndex + 1
+          }));
+
+    setTimeout(function(){
+      this.setState(prevState => ({
+      backgroundIndex: prevState.backgroundIndex + 1
+
+    }));
+}.bind(this), 400);
 
 }
 
 
-  goToNextSlide = () => {
-      if(this.state.currentIndex === this.state.slides.length - 1) {
-            return this.setState({
-              currentIndex: 0,
-              translateValue: 0
-            })
-          }
-      this.setState(prevState => ({
-      currentIndex: prevState.currentIndex + 1,
-      translateValue: prevState.translateValue + -(this.slideWidth())
-    }));
-  }
-
-  slideWidth = () => {
-     return document.querySelector('.slide').clientWidth
-  }
-
   render() {
      return (
          <div>
-            <div className="slider">
+         <div className = "black-top">
+         </div>
+          <div className='slider' style={{
+              backgroundImage:`url(${this.state.slides[this.state.backgroundIndex].image})`,
+              backgroundSize:'cover',
+              backgroundRepeat:'no-repeat',
+              backgroundPosition:'50% 60%'
 
-                <div className="slider-wrapper"
+          }}>
 
-                  style={{
-                    transform: `translateX(${this.state.translateValue}px)`,
-                    transition: 'transform ease-out 2s'}}>
-                  {this.state.slides.map((slide, i) => (<Slide key={i} image={slide.image}/>))}
+
+
+                <div className="slider-wrapper">
+                  {this.state.slides.map((slide, i) => (<Slide
+                      slideIndex = {this.state.slideIndex}
+                      key={i}
+                      imageKey={i}
+                      translateValue = {this.state.translateValue}
+                          image={slide.image}
+                          />))}
         </div>
 
 

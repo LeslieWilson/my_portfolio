@@ -96,25 +96,21 @@ button:focus{
 }
 
 /*Homescreens================================*/
+.colorphoto{
+    position:absolute;
+    width:100%;
+    height:100%;
 
-.blacknwhite{
-    position: absolute;
-    height:50em;
-    width:50em;
+
+
 }
 
-.vectorlines2{
-    position: absolute;
-    height:50em;
-    width:50em;
-}
+.black_n_white_Vectorlines_img{
+position:absolute;
+    width:100%;
+    height:100%;
 
-.vectorlines3{
-    position:left;
-    height:50em;
-    width:200em;
 }
-
 /*gridlist=====================================*/
 
 .gridTitle{
@@ -150,10 +146,10 @@ button:focus{
 
 .slider {
   position: left;
-  width: 82em;
+  width: 80%;
   margin: 0 auto;
   height: 43em;
-  overflow: hidden;
+  overflow: visible;
   white-space: nowrap;
 
 }
@@ -188,9 +184,10 @@ font-size: 6em;
 }
 
 .slide {
-  display: inline-block;
-  height: 100%;
-  width: 100%;
+    position:absolute;
+    z-index:2000;
+    height: 100%;
+    width: 100%;
 
 }
 
@@ -203,7 +200,7 @@ font-size: 6em;
     margin-top:3.3em;
     opacity:1;
     z-index:1000;
-    color:darkgray;
+    color:black;
 
 }
 
@@ -214,23 +211,29 @@ font-size: 6em;
 
 .prevArrow {
     position: absolute;
-    top: 10%;
-    left: 25px;
+    top: 7.4%;
+    left: 31.5px;
     padding-left:4em;
-    background-color:rgba(255,255,255,0.3);
-    height:45em;
-
+    height:28em;
+background-color:black;
 }
 
 .nextArrow {
   position: absolute;
-  top: 10%;
-  right: 25px;
+  top: 7.4%;
+  right: 32px;
   padding-right:4em;
-  background-color:white;
-  background-color:rgba(255,255,255,0.3);
+  background-color:black;
 
-  height:45em;
+
+  height:28em;
+}
+
+.black-top{
+    height: 4em;
+    background-color: black;
+    width:75em;
+    margin-left:7em;
 }
 
 /*slider-info==========================*/
@@ -311,23 +314,3 @@ margin:0;
         padding:4em;
         font-size:.8em;
     }
-
-/*Mystery CSS================================*/
-
-.fade-enter {
-  opacity: .03;
-}
-
-.fade-enter.fade-enter-active {
-  opacity: 1;
-  transition: opacity 3s ease-in;
-}
-
-.fade-leave {
-  opacity: 1;
-}
-
-.fade-leave.fade-leave-active {
-  opacity: 0.01;
-  transition: opacity 500ms ease-in;
-}

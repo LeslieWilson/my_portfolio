@@ -2,10 +2,7 @@
 import React from 'react';
 import Fade from 'react-reveal/Fade';
 
-import vectorlines2 from '../../images/vectorlines2.svg';
-
-
-
+import clr2 from '../../images/clr2.png';
 
 
 
@@ -35,9 +32,9 @@ class Fadein extends React.Component {
     return (
       <div className='vectorlines2'>
 
-        <Fade when={this.state.show} className='Fade'>
+        <Fade when={this.state.show} className='Fade' duration = {10000}>
 
-<img src ={vectorlines2} onScroll= {this.handleScroll}></img>
+<img src ={clr2} onScroll= {this.handleScroll} className="colorphoto"></img>
  </Fade>
       </div>
         );

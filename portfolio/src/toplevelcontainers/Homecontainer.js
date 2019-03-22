@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import Blacknwhite from '../scenes/home/components/Blacknwhite.js'
 
-import White from '../scenes/home/components/White.js'
-
-
 import Fadein from '../scenes/home/components/fade/Fadein.js'
 
 
@@ -17,7 +14,7 @@ class Homecontainer extends Component {
             </div>
             <Blacknwhite />
             <Fadein />
-            
+
 
         </div>
         );

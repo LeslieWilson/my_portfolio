@@ -1,10 +1,11 @@
+import Image_1_Map from "./Image_1_Map.jpg";
+import Image_1_Map_Animation from "./Image_1_Map_Animation.gif";
 const images=[
-    {
-      image:"https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/aurora.jpg" },
+     {image:Image_1_Map },
 
-      {image:"https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/canyon.jpg"},
+      {image:Image_1_Map_Animation},
 
-      {image:"https://s3.us-east-2.amazonaws.com/dzuz14/thumbnails/city.jpg"},
+
   ];
 
 export default images;
