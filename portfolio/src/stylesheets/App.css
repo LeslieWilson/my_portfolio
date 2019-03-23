@@ -65,7 +65,7 @@
 
 .drpdownbtn{
 
-    padding: 6px 12px;
+  padding: 6px 12px;
   font-size: 16px;
   font-weight: normal;
   line-height: 2;
@@ -100,16 +100,49 @@ button:focus{
     position:absolute;
     width:100%;
     height:100%;
+    top:7%;
 
 
 
 }
 
+.whitephoto{
+    position:absolute;
+        width:100%;
+        height:100%;
+        top:7%;
+
+}
 .black_n_white_Vectorlines_img{
 position:absolute;
     width:100%;
     height:100%;
+    top:7%;
 
+}
+
+.buttonUX{
+font-size:4em;
+height:4em;
+width:7em;
+}
+
+.buttonArchitecture{
+font-size:4em;
+height:4em;
+width:7em;
+}
+
+.buttonUrban{
+    font-size:4em;
+    height:4em;
+    width:7em;
+}
+
+.options{
+    display:flex;
+    justify-content: space-around;
+    margin-top:15%;
 }
 /*gridlist=====================================*/
 
@@ -119,6 +152,8 @@ position:absolute;
     font-weight:bolder;
     margin-right:80em;
     margin-top: -160px;
+    height:2em;
+
 },
 
 .gridTitle2 {
@@ -127,6 +162,7 @@ position:absolute;
     font-weight:bolder;
     margin-right:80em;
     margin-top: -160px;
+    height:30em;
 }
 
 .gridimgs:hover{border:4px solid pink;}
@@ -273,8 +309,53 @@ margin:0;
 .deforest{
     width:70em;
     margin-left:10em;
+
 }
 
+.designStrategies2{
+    font-size: 1em;
+    color:hotpink;
+    font-weight:bolder;
+    margin-left:10em;
+
+
+}
+
+.tree{
+    width:70em;
+    margin-left:10em;
+
+}
+
+.drawing1{
+    width:35em;
+    margin-left:10em;
+
+}
+
+.drawing2{
+    width:35em;
+
+}
+
+.drawing3{
+    width:70em;
+    margin-left:10em;
+}
+
+.amazonTEXT{
+    font-size:1em;
+    width:90%;
+
+}
+
+.subsidey{
+    margin-bottom:1em;
+}
+
+.restOfText{
+    margin-left:10em;
+}
 /*about================================*/
 
 .textdiv{

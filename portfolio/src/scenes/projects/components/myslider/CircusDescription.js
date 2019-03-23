@@ -1,5 +1,9 @@
 import React from 'react'
 import Image_4_Deforestation from './images/Image_4_Deforestation.jpg';
+import Scroll_Image_3 from "./images/Scroll_Image_3.jpg";
+import Scroll_Image_2 from "./images/Scroll_Image_2.jpg";
+import Scroll_Image_1 from "./images/Scroll_Image_1.jpg";
+import Image_9_Sections from "./images/Image_9_Sections.jpg"
 
 const CircusDescription = (props) => {
   const styles = {visibility: props.visibility}
@@ -28,22 +32,53 @@ const CircusDescription = (props) => {
 
   </div>
 
- <div className='circusTEXT'>
-<p>In a 2010 report, the World Bank estimated that the “tipping point” for the Amazon is estimated to be approximately 20% deforestation. If reached, this threshold could trigger a dramatic die-back of the Amazon rainforest. With 17% of the Amazon already deforested, the Amazon ecosystem and its important global contributions are at risk if current patterns continue.</p>
+ <div className='amazonTEXT'>
+    <p>In a 2010 report, the World Bank estimated that the “tipping point” for the Amazon is estimated to be approximately 20% deforestation. If reached, this threshold could trigger a dramatic die-back of the Amazon rainforest. With 17% of the Amazon already deforested, the Amazon ecosystem and its important global contributions are at risk if current patterns continue.</p>
 
-<p>Walter Vergara and Sebastian M. Scholz, editors. WORLD BANK STUDY: Assessment of the Risk of Amazon Dieback</p>
+    <p>Walter Vergara and Sebastian M. Scholz, editors. WORLD BANK STUDY: Assessment of the Risk of Amazon Dieback</p>
 
-<p>This thesis emerged from the curiosity and fascination to investigate the opportunities created from temporal and dynamic systems, where conflicting uses are not mutually exclusive, but instead have the potential to provoke alternative urban strategies that are able to adapt to different conflicting actors through time. Within the context of the Amazon, in which global, national and local interests combine to produce diverse and conflictive manifestations, an opportunity arises to radically rethink urban development along rapidly changing edge conditions (the ‘Frontier’).</p>
+    <p>This thesis emerged from the curiosity and fascination to investigate the opportunities created from temporal and dynamic systems, where conflicting uses are not mutually exclusive, but instead have the potential to provoke alternative urban strategies that are able to adapt to different conflicting actors through time. Within the context of the Amazon, in which global, national and local interests combine to produce diverse and conflictive manifestations, an opportunity arises to radically rethink urban development along rapidly changing edge conditions (the ‘Frontier’).</p>
 
-<p>The Amazonia basin has been the protagonist of many large scale infrastructural and colonization ambitions that are closely tied to larger global economic pressures. These are mainly manifest along the peripheries and edges where both deforestation and land conflict have intensified alongside rapid rates of urbanization. Increased environmental awareness and the use of nature as capital make obvious that Nature can no longer be disregarded. This sets up a scenario where the Frontier has the potential for coupling and hybridization towards a new common project, one where built space and natural space are no longer mutually exclusive, but instead work as a systematic relationship that can adapt to land use transformations through time.</p>
+    <p>The Amazonia basin has been the protagonist of many large scale infrastructural and colonization ambitions that are closely tied to larger global economic pressures. These are mainly manifest along the peripheries and edges where both deforestation and land conflict have intensified alongside rapid rates of urbanization. Increased environmental awareness and the use of nature as capital make obvious that Nature can no longer be disregarded. This sets up a scenario where the Frontier has the potential for coupling and hybridization towards a new common project, one where built space and natural space are no longer mutually exclusive, but instead work as a systematic relationship that can adapt to land use transformations through time.</p>
 
-<p>The Amazonia basin has been the protagonist of many large scale infrastructural and colonization ambitions that are closely tied to larger global economic pressures. These are mainly manifest along the peripheries and edges where both deforestation and land conflict have intensified alongside rapid rates of urbanization. Increased environmental awareness and the use of nature as capital make obvious that Nature can no longer be disregarded. This sets up a scenario where the Frontier has the potential for coupling and hybridization towards a new common project, one where built space and natural space are no longer mutually exclusive, but instead work as a systematic relationship that can adapt to land use transformations through time.</p>
+    <p>The Amazonia basin has been the protagonist of many large scale infrastructural and colonization ambitions that are closely tied to larger global economic pressures. These are mainly manifest along the peripheries and edges where both deforestation and land conflict have intensified alongside rapid rates of urbanization. Increased environmental awareness and the use of nature as capital make obvious that Nature can no longer be disregarded. This sets up a scenario where the Frontier has the potential for coupling and hybridization towards a new common project, one where built space and natural space are no longer mutually exclusive, but instead work as a systematic relationship that can adapt to land use transformations through time.</p>
+
+
+    </div>
+    </div>
+<div className = "amazonPhoto">
+    <img src= {Image_4_Deforestation} className="deforest" />
+
+<h3 className='designStrategies2'>Design Strategies</h3>
+
+
+<p className="restOfText">In a 2010 report, the World Bank estimated that the “tipping point” for the Amazon is estimated to be approximately 20% deforestation. If reached, this threshold could trigger a dramatic die-back of the Amazon rainforest. With 17% of the Amazon already deforested, the Amazon ecosystem and its important global contributions are at risk if current patterns continue.*
+* Walter Vergara and Sebastian M. Scholz, editors. WORLD BANK STUDY: Assessment of the Risk of Amazon Dieback </p>
+
+
+<img src = {Scroll_Image_3} className="tree" />
+
+<h3 className='designStrategies2'>Design Strategies</h3>
+
+<p className="restOfText">In a 2010 report, the World Bank estimated that the “tipping point” for the Amazon is estimated to be approximately 20% deforestation. If reached, this threshold could trigger a dramatic die-back of the Amazon rainforest. With 17% of the Amazon already deforested, the Amazon ecosystem and its important global contributions are at risk if current patterns continue.*
+* Walter Vergara and Sebastian M. Scholz, editors. WORLD BANK STUDY: Assessment of the Risk of Amazon Dieback
+
+This thesis emerged from the curiosity and fascination to investigate the opportunities created from temporal and dynamic systems, where conflicting uses are not mutually exclusive, but instead have the potential to provoke alternative urban strategies that are able to adapt to different conflicting actors through time. Within the context of the Amazon, in which global, national and local interests combine to produce diverse and conflictive manifestations, an opportunity arises to radically rethink urban development along rapidly changing edge conditions (the ‘Frontier’).
+
+The Amazonia basin has been the protagonist of many large scale infrastructural and colonization ambitions that are closely tied to larger global economic pressures. These are mainly manifest along the peripheries and edges where both deforestation and land conflict have intensified alongside rapid rates of urbanization. Increased environmental awareness and the use of nature as capital make obvious that Nature can no longer be disregarded. This sets up a scenario where the Frontier has the potential for coupling and hybridization towards a new common project, one where built space and natural space are no longer mutually exclusive, but instead work as a systematic relationship that can adapt to land use transformations through time.</p>
+
+<img src = {Scroll_Image_1} className="drawing1" />
+<img src = {Scroll_Image_2} className="drawing2" />
+
+<h3 className='designStrategies2'>Design Strategies</h3>
+
+<p className="restOfText">In a 2010 report, the World Bank estimated that the “tipping point” for the Amazon is estimated to be approximately 20% deforestation. If reached, this threshold could trigger a dramatic die-back of the Amazon rainforest. With 17% of the Amazon already deforested, the Amazon ecosystem and its important global contributions are at risk if current patterns continue.*
+* Walter Vergara and Sebastian M. Scholz, editors. WORLD BANK STUDY: Assessment of the Risk of Amazon Dieback </p>
+
+<img src = {Image_9_Sections} className="drawing3" />
+</div>
 </div>
 
-</div>
-<img src= {Image_4_Deforestation} className="deforest" />
-
-</div>
 
 
     )

@@ -54,6 +54,7 @@ gridListKid2:{
 
 
 
+
 });
 
 function ImageGridList(props) {
@@ -80,8 +81,7 @@ function ImageGridList(props) {
           </GridListTile>
         ))}
       </GridList>
-<h1 className="gridTitle">Urban Design</h1>
-
+<h1 className="gridTitle" id="UrbanDesign">Urban Design</h1>
 
       <GridList cellHeight={450} className={classes.gridListKid2} cols={3}>
         {gridlist3Data.map(tile => (
@@ -91,7 +91,7 @@ function ImageGridList(props) {
         ))}
       </GridList>
 
-      <h1 className="gridTitle">Architecture</h1>
+      <h1 className="gridTitle" id = "Architecture">Architecture</h1>
 
       <GridList cellHeight={450} className={classes.gridListKid2} cols={3}>
         {gridlist4Data.map(tile => (
@@ -100,7 +100,7 @@ function ImageGridList(props) {
           </GridListTile>
         ))}
       </GridList>
-      <h1 className="gridTitle">UX Design</h1>
+      <h1 className="gridTitle" id="UXDesign">UX Design</h1>
     </div>
 
   );
