@@ -3,6 +3,7 @@
     "@fortawesome/fontawesome-free": "^5.7.2"
   },
   "dependencies": {
-    "npm": "^6.8.0"
+    "npm": "^6.8.0",
+    "react-router-hash-link": "^1.2.1"
   }
 }
